@@ -3,16 +3,16 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.getbutterfly.hello-world"
+        id        = "com.zinc.hello-world"
         version   = "1.0.0">
 
-    <name>getButterfly</name>
+    <name>ZINC</name>
 
     <description>
-        getButterfly.com web feed and programming news
+        ZINC Hybrid Webapp
     </description>
 
-    <author href="http://getbutterfly.com" email="support@getbutterfly.com">
+    <author href="http://zinc.ie" email="support@getbutterfly.com">
         Ciprian Popescu
     </author>
 
