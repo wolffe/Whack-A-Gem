@@ -6,7 +6,7 @@
         id        = "com.getbutterfly.zinc"
         version   = "1.5.2">
 
-    <name>Hello World</name>
+    <name>ZINC</name>
 
     <description>
         ZINC Hybrid Webapp. This application pulls the latest articles via RSS and jQuery straight to your device.
