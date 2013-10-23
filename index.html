@@ -8,8 +8,8 @@
 
 <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-<script src="lib/jquery-1.6.4.min.js"></script>
-<script src="js/jquery.rss.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.rss.js"></script>
 <script>
 jQuery(function($) {
     $("#rss-feeds").rss("http://feeds.feedburner.com/premiumpixels")
@@ -48,6 +48,8 @@ strong, b {
 <h1>Welcome to ZINC Hybrid Webapp</h1>
 <p><strong>Hello world!</strong></p>
 <p>Welcome to ZINC Hybrid Webapp. This application pulls the latest articles via RSS and jQuery straight to your device.</p>
+
+<div id="rss-feeds"></div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
