@@ -16,30 +16,29 @@ function addEvent(element, event, delegate ) {
 	}		
 
     function Game(){
-			var game = document.querySelector("section#game");
-			var score = game.querySelector("section#game span.score");
-			var high_scores = game.querySelector("section#game ol.high-scores");
-			var time = game.querySelector("section#game span.time");
-			var start = game.querySelector("section#game span.start");
-			
-			function Gem(Class, Value, MaxTTL) {
-				this.Class = Class;
-				this.Value = Value;
-				this.MaxTTL = MaxTTL;
-			};			
-			
-			var gems = new Array();
-			gems[0] = new Gem('green', 10, 1.2);
-			gems[1] = new Gem('blue', 20, 1);
-			gems[2] = new Gem('orange', 50, 0.75);
-			
-			function Click(event)
-			{
-				if(event.preventDefault) event.preventDefault();
-				if (event.stopPropagation) event.stopPropagation();
-				else event.cancelBubble = true;
-				
-				var target = event.target || event.srcElement;
+		var game = document.querySelector("section#game");
+		var score = game.querySelector("section#game span.score");
+		var high_scores = game.querySelector("section#game ol.high-scores");
+		var time = game.querySelector("section#game span.time");
+		var start = game.querySelector("section#game span.start");
+
+		function Gem(Class, Value, MaxTTL) {
+            this.Class = Class;
+			this.Value = Value;
+            this.MaxTTL = MaxTTL;
+		};			
+
+		var gems = new Array();
+		gems[0] = new Gem('green', 10, 1.2);
+		gems[1] = new Gem('blue', 20, 1);
+		gems[2] = new Gem('orange', 50, 0.75);
+
+		function Click(event) {
+            if(event.preventDefault) event.preventDefault();
+            if (event.stopPropagation) event.stopPropagation();
+            else event.cancelBubble = true;
+
+            var target = event.target || event.srcElement;
 				
 				if(target.className.indexOf('gem') > -1){
 					var value = parseInt(target.getAttribute('data-value'));
