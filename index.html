@@ -7,6 +7,9 @@
 <script src="phonegap.js"></script>
 	
 <link rel="stylesheet" href="css/main.css">
+
+<script src="https://apis.google.com/js/plusone.js"></script>
+
 <script>
 function addEvent(element, event, delegate ) {
 	if (typeof (window.event) != 'undefined' && element.attachEvent)
@@ -191,13 +194,16 @@ function addEvent(element, event, delegate ) {
 				
 			var game = new Game();		
 		});
-	</script>
+
+
+</script>
 </head>
 <body>
     <div id="page">	
 		<section id="game">
 			<span class="score">0</span>
 			<span class="time">0</span>
+            <!--<g:plus action="share"></g:plus>-->
 			<span class="start">START!
 			<ol class="high-scores">
 			</ol>
