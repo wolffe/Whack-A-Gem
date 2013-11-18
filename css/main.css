@@ -76,3 +76,14 @@ section#game .gem.orange{
 
 
 
+
+
+
+
+
+
+
+.sparkling{ position:relative;}
+.particle{ position:absolute;z-index:10;top:0px;left:0px;}
+
+
