@@ -11,8 +11,6 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/t4d-particles.js" type="text/javascript"></script>
 
-<script src="https://apis.google.com/js/plusone.js"></script>
-
 <script>
 $(document).ready(function(){
     $("section#game").css({
@@ -155,6 +153,7 @@ function addEvent(element, event, delegate ) {
 			this.Start = function() {
 				score.innerHTML = "0";
 				start.style.display = "none";
+				high_scores.style.display = "none";
 				var interval = setInterval(Spawn, 750);
 				
 				var count = 10;
@@ -176,6 +175,7 @@ function addEvent(element, event, delegate ) {
 						Stop(counter);
 						time.innerHTML = "Game Over!";
 						start.style.display = "block";
+						high_scores.style.display = "block";
 						
 						UpdateScore();
 						
@@ -211,11 +211,10 @@ function addEvent(element, event, delegate ) {
 		<section id="game" class="sparkling">
 			<span class="score">0</span>
 			<span class="time">0</span>
-            <!--<g:plus action="share"></g:plus>-->
 			<span class="start">START!
+			</span>			
 			<ol class="high-scores">
 			</ol>
-			</span>			
 		</section>
 	</div> 	
 </body>
