@@ -41,7 +41,7 @@ section#game {
 	max-height: 100%;
 	overflow: hidden;
 	position: relative;
-	background-image: url('../images/tree-tall.png'), url('../images/grass-block.png'), url('../images/sky.png');
+	background-image: url('../images/tree-tall.png'), url('../images/grass-block.png'), url('../images/background.png');
 	background-position: 62% 84%, right bottom, left top;
 	background-repeat: no-repeat, no-repeat, repeat;	
 	position: relative;
