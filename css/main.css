@@ -1,6 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Englebert);
+
+* {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; 
+
+	-moz-font-feature-settings: "liga=1, dlig=1";
+	-ms-font-feature-settings: "liga", "dlig";
+	-webkit-font-feature-settings: "liga", "dlig";
+	-o-font-feature-settings: "liga", "dlig";
+	font-feature-settings: "liga", "dlig";
+}
+
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 /******************************/
@@ -26,13 +41,14 @@ section#game {
 	max-height: 100%;
 	overflow: hidden;
 	position: relative;
-	background-image: url('../images/Tree Short.png'), url('../images/Tree Tall.png'), url('../images/Grass Block.png'), url('../images/Sky.png');
-	background-position: 80% 90%, 10% 90%, left bottom, left top;
-	background-repeat: no-repeat, no-repeat, repeat-x, repeat-x;	
+	background-image: url('../images/tree-tall.png'), url('../images/grass-block.png'), url('../images/sky.png');
+	background-position: 62% 84%, right bottom, left top;
+	background-repeat: no-repeat, no-repeat, repeat;	
 	position: relative;
 	color: #ffffff;
-	font-size: 30px;
-	font-family: "arial,sans-serif";
+	font-size: 24px;
+    line-height: 32px;
+	font-family: "Englebert", Helvetica, sans-serif;
 }
 section#game .score{
 	display: block;
@@ -60,18 +76,18 @@ section#game .start .high-scores{
 section#game .gem{
 	display: block;
 	position: absolute;
-	width: 40px;
-	height: 44px;
+	width: 48px;
+	height: 48px;
 	cursor: pointer;
 }
 section#game .gem.green{
-	background: url('../images/Gem Green.png') no-repeat top left;
+	background: url('../images/gem-green.png') no-repeat top left;
 }
 section#game .gem.blue{
-	background: url('../images/Gem Blue.png') no-repeat top left;
+	background: url('../images/gem-blue.png') no-repeat top left;
 }
 section#game .gem.orange{
-	background: url('../images/Gem Orange.png') no-repeat top left;
+	background: url('../images/gem-orange.png') no-repeat top left;
 }
 
 
@@ -97,3 +113,27 @@ section#game .gem.orange{
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 
+.gem {
+    animation-fill-mode: both;
+
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+
+    /*
+    -webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+    -webkit-transform: perspective(600);
+    -webkit-perspective: 600;
+    
+    -webkit-perspective:1000; -moz-perspective:1000; perspective:1000;
+    */
+}
