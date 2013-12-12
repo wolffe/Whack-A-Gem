@@ -10,7 +10,7 @@ $(function(){
 	var particle_max_size  = 20; //maximum particle starting size
 	var last_moved         = 0, now, rand, myim; //nothing to change here
 
-    $('.sparkling').click(function(pos){
+    $('.gem').click(function(pos){
         now = pos.timeStamp;
         if(now - last_moved > delay) {
             for(var i = 1; i <= particle_number; ++i) {
