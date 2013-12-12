@@ -132,7 +132,7 @@ function Game() {
         score.innerHTML = "0";
 		start.style.display = "none";
 		high_scores.style.display = "none";
-		var interval = setInterval(Spawn, 550);
+		var interval = setInterval(Spawn, 1000);
 
         var count = 10;
 		var counter = null;
@@ -175,5 +175,5 @@ addEvent(document, 'readystatechange', function() {
     if(document.readyState !== "complete")
         return true;
 
-	var game = new Game();		
+	var game = new Game();
 });
