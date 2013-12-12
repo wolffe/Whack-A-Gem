@@ -4,12 +4,12 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.getbutterfly.whackagem"
-        version   = "1.1.3">
+        version   = "1.1.4">
 
     <name>Whack-A-Gem</name>
 
     <description>
-        Whack-A-Gem is a simple gem game where you tap gems for points.
+        Whack-A-Gem is a simple gem game where you tap gems for points. How many gems can you tap in 10 seconds?
     </description>
 
     <author href="http://getbutterfly.com" email="getbutterfly@gmail.com">
@@ -47,9 +47,6 @@
 
     <preference name="websecurity" value="disable" />
 
-    <!-- Plugins can also be added here. -->
-    <gap:plugin name="com.adobe.plugins.gaplugin" />
-
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
@@ -84,9 +81,6 @@
     -->
 
     <gap:platform name="android" />
-    <!--
-    <gap:platform name="winphone" />
-    -->
 
     <!--
     Define access to external domains.
