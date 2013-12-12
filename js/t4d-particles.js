@@ -1,10 +1,10 @@
 $(function(){
 	var imgsrc             = '"images/spark'; // it will automaticaly add 1.png,2.png etc
-	var particle_number    = 10; //how many particles to be launched at every mouse move
+	var particle_number    = 5; //how many particles to be launched at every mouse move
 	var particle_variation = 20; //randomness of the starting position
-	var delay              = 20; //delay bewteen mousemove // default: 1
+	var delay              = 1; //delay bewteen mousemove // default: 1
 	var spark_types        = 3; //how many types of spark images do we use
-	var particle_life      = 1600; //how long the particle lasts before gone
+	var particle_life      = 800; //how long the particle lasts before gone
 	var death_rand         = 100; //how much to spread the particles
 	var particle_min_size  = 5; // minimum particle starting size
 	var particle_max_size  = 15; //maximum particle starting size
