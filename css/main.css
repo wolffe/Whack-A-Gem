@@ -1,21 +1,23 @@
-@import url(http://fonts.googleapis.com/css?family=Englebert);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 * {
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale; 
 
-	-moz-font-feature-settings: "liga=1, dlig=1";
-	-ms-font-feature-settings: "liga", "dlig";
-	-webkit-font-feature-settings: "liga", "dlig";
-	-o-font-feature-settings: "liga", "dlig";
-	font-feature-settings: "liga", "dlig";
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+    text-transform: uppercase;
 }
 
 body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-weight: 700;
 }
 
 /******************************/
@@ -41,14 +43,14 @@ section#game {
 	max-height: 100%;
 	overflow: hidden;
 	position: relative;
-	background-image: url('../images/tree-tall.png'), url('../images/grass-block.png'), url('../images/background.png');
-	background-position: 62% 84%, right bottom, left top;
-	background-repeat: no-repeat, no-repeat, repeat;	
+	background-image: url('../images/grass-block.png'), url('../images/background.png');
+	background-position: right bottom, left top;
+	background-repeat: repeat-x, repeat;	
 	position: relative;
 	color: #ffffff;
 	font-size: 24px;
     line-height: 32px;
-	font-family: "Englebert", Helvetica, sans-serif;
+	font-family: "Montserrat", Helvetica, sans-serif;
 }
 section#game .score{
 	display: block;
@@ -61,6 +63,7 @@ section#game .time{
 	position: absolute;
 	top: 10px;
 	right: 10px;
+    font-size: 12px;
 }
 section#game .start{
 	display: block;
@@ -70,40 +73,38 @@ section#game .start{
 	width: 50%;
 	cursor: pointer;
 }
-section#game .start .high-scores{
+.high-scores {
+    margin: 64px auto;
+    width: 100px;
+    overflow: visible;
 	text-align: left;
 }
-section#game .gem{
+section#game .gem {
 	display: block;
 	position: absolute;
 	width: 48px;
 	height: 48px;
 	cursor: pointer;
 }
-section#game .gem.green{
+section#game .gem.green {
 	background: url('../images/gem-green.png') no-repeat top left;
 }
-section#game .gem.blue{
+section#game .gem.blue {
 	background: url('../images/gem-blue.png') no-repeat top left;
 }
-section#game .gem.orange{
+section#game .gem.orange {
 	background: url('../images/gem-orange.png') no-repeat top left;
 }
 
 
-
-
-
-
-
-
-
-
-.sparkling{ position:relative;}
-.particle{ position:absolute;z-index:10;top:0px;left:0px;}
+.sparkling { position: relative;}
 
 
 .particle {
+    position: absolute;
+    top: 0;
+    left: 0;
+
     -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
@@ -125,15 +126,4 @@ section#game .gem.orange{
 	-o-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
-
-    /*
-    -webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-
-    -webkit-transform: perspective(600);
-    -webkit-perspective: 600;
-    
-    -webkit-perspective:1000; -moz-perspective:1000; perspective:1000;
-    */
 }
