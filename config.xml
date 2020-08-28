@@ -4,7 +4,7 @@
 		xmlns:android="http://schemas.android.com/apk/res/android"
 		id="com.getbutterfly.whackagem"
 		versionCode="1"
-		version="1.2.0">
+		version="1.2.1">
     <name>Whack-A-Gem</name>
     <description>Whack-A-Gem is a simple gem game where you tap gems for points. How many gems can you tap in 10 seconds?</description>
     <author href="https://getbutterfly.com" email="getbutterfly@gmail.com">Ciprian Popescu</author>
